@@ -9,6 +9,12 @@ public class MerchantA extends Merchant implements Bonus{
         this.email = email;
     }
 
+    public String infoMerchant() {
+        String name = getName();
+        String phone = getPhone();
+        return "Продавец: " + name + ", " + phone + ", " + email + "\n";
+    }
+
     @Override
     public double calcBonus(double sales) {
         double bonus;
